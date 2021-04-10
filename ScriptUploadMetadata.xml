@@ -16,8 +16,10 @@
     <FileEntry Name="DepartureCity.dat" Filter="2" />
     <FileEntry Name="PrefSeat.dat" Filter="2" />
     <FileEntry Name="TypeSeat.dat" Filter="2" />
+    <FileEntry Name="ScriptVcsSettings.xml" Filter="2" />
     <FileEntry Name="combined_Day8_2.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name=".gitignore" Filter="1" />
     <FileEntry Name="220241987440.idx" Filter="1" />
     <FileEntry Name="89002448440.idx" Filter="1" />
     <FileEntry Name="92482547440.idx" Filter="1" />
@@ -28,6 +30,7 @@
     <FileEntry Name="custom_body_variables.txt" Filter="1" />
     <FileEntry Name="Day8_2.c.pickle" Filter="1" />
     <FileEntry Name="Day8_2.ci" Filter="1" />
+    <FileEntry Name="Day8_2.prm.bak" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="lrw_custom_body.h" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
@@ -41,6 +44,7 @@
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name=".git\" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>
