@@ -1,0 +1,1 @@
+globals.h(36): Error -27792: Failed to connect to server "localhost:8086": [10061] Connection refused  	[MsgId: MERR-27792]

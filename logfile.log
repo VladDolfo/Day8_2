@@ -1,4 +1,5 @@
-c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:27: warning: unrecognized character escape sequence `\/'
-c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:84: warning: expression with no effect elided
-c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:98: warning: expression with no effect elided
-c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:132: warning: unrecognized character escape sequence `\.'
+c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: globals.h:40: warning: missing return value
+c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:33: warning: unrecognized character escape sequence `\/'
+c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:89: warning: expression with no effect elided
+c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:103: warning: expression with no effect elided
+c:\users\metat\documents\vugen\scripts\lesson8zadanie2-master\day8_2\\pre_cci.c: Create.c:142: warning: unrecognized character escape sequence `\.'

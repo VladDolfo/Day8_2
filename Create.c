@@ -1,8 +1,9 @@
 Create()
 {
-	/* Flights */
+	tName = "003.OpenPage_ticket_FindFlight_ex2";
+	lr_start_transaction(tName);
 
-	web_url("Search Flights Button", 
+	status=web_url("Search Flights Button", 
 		"URL={Host}/cgi-bin/welcome.pl?page=search", 
 		"TargetFrame=body", 
 		"Resource=0", 
@@ -11,6 +12,11 @@ Create()
 		"Snapshot=t3.inf", 
 		"Mode=HTML", 
 		LAST);
+	
+	 end_transaction(tName, status);
+	 
+	  tName = "004.Create_ticket_FindFlight_ex2";
+      lr_start_transaction(tName);
 
 	web_reg_save_param_ex(
 		"ParamName=OFlight",
@@ -30,9 +36,7 @@ Create()
 		LAST);
 	
 	
-	/* Continue 1 */
-	
-	web_submit_data("reservations.pl", 
+	status=web_submit_data("reservations.pl", 
 		"Action={Host}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
@@ -56,6 +60,7 @@ Create()
 		"Name=findFlights.y", "Value=10", ENDITEM, 
 		LAST);
 	
+      end_transaction(tName, status);
 	
 	
 	
@@ -104,8 +109,11 @@ Create()
   	lr_save_string(trueticket[randomize],"true");
  	lr_output_message("Случайный номер билета из числа четных = %d",randomize);
  	lr_output_message("Выбран этот билет = %s",trueticket[randomize]);
+ 	
+ 	 tName = "005.Create_ticket_ChooseCost_ex2";
+	 lr_start_transaction(tName);
 	
-	web_submit_data("reservations.pl_2", 
+	status=web_submit_data("reservations.pl_2", 
 		"Action={Host}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
@@ -123,8 +131,10 @@ Create()
 		"Name=reserveFlights.y", "Value=6", ENDITEM, 
 		LAST);
 	
-
-	/* Continue 3 */
+		end_transaction(tName, status); 
+		
+		tName = "006.Create_ticket_PaymentDetail_ex2";
+		lr_start_transaction(tName);
 	
 	web_reg_save_param_ex(
 		"ParamName=Info",
@@ -135,7 +145,7 @@ Create()
 		LAST);
 	
 	
-	web_submit_data("reservations.pl_3", 
+	status=web_submit_data("reservations.pl_3", 
 		"Action={Host}/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
@@ -163,6 +173,8 @@ Create()
 		"Name=buyFlights.x", "Value=39", ENDITEM, 
 		"Name=buyFlights.y", "Value=12", ENDITEM, 
 		LAST);
+		
+		end_transaction(tName, status);
 	infot[1]=lr_eval_string("{Info}");
 	lr_output_message("Информация о билете: = %s", infot[1]);
 	

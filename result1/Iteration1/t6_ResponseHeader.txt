@@ -1,10 +1,8 @@
-HTTP/1.1 200 OK
-Date: Sat, 10 Apr 2021 12:45:46 GMT
-Server: Apache/2.2.21 (Win32)
-Expires: Fri, 09 Apr 2021 12:45:46 GMT
-Set-Cookie: MTUserInfo=firstName&Jojo&username&jojo&address2&&hash&47&address1&&lastName&Bean%0A; path=/
-Keep-Alive: timeout=5, max=91
-Connection: Keep-Alive
-Transfer-Encoding: chunked
-Content-Type: text/html; charset=ISO-8859-1
+HTTP/1.1 204 No Content
+Content-Type: application/json
+Request-Id: 36ef2d0c-9aae-11eb-802c-7085c2afece6
+X-Influxdb-Build: OSS
+X-Influxdb-Version: 1.8.4
+X-Request-Id: 36ef2d0c-9aae-11eb-802c-7085c2afece6
+Date: Sun, 11 Apr 2021 10:11:00 GMT
 

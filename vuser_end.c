@@ -1,6 +1,7 @@
 vuser_end()
 {
-	/* Sign Off */
+	tName = "007.Log_out_ex2";
+	lr_start_transaction(tName);
 
 	web_url("SignOff Button", 
 		"URL={Host}/cgi-bin/welcome.pl?signOff=1", 
@@ -11,6 +12,8 @@ vuser_end()
 		"Snapshot=t5.inf", 
 		"Mode=HTML", 
 		LAST);
+	
+	end_transaction(tName, status); 
 	
 	return 0;
 }

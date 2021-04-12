@@ -1,3 +1,1 @@
-"advanceDiscount=0&depart=Zurich&departDate=04%2F10%2F2021&arrive=London&returnDate=04%2F15%2F2"
-"021&numPassengers=1&seatPref=Aisle&seatType=First&.cgifields=roundtrip&.cgifields=seatType&.cg"
-"ifields=seatPref&findFlights.x=62&findFlights.y=10"
+"business_metrics,name=002.Login_fillin_fiels_ex_2,status=0 response_time=100"
